@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Basic Website</title>
+    <meta name="description" content="A small, responsive starter website with optional CSS and JS files">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container">
+            <h1 class="logo">My Website</h1>
+            <nav class="nav">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+
+    <main id="home" class="container">
+        <section class="hero">
+            <h2>Welcome to the Basic Website</h2>
+            <p>This is a minimal starter template with separate CSS and JavaScript files. Modify it to start your
+                project.</p>
+            <button id="actionBtn">Click me</button>
+        </section>
+
+
+        <section id="about" class="card">
+            <h3>About</h3>
+            <p>Describe your project here. This section uses semantic HTML and simple layout so it works well on all
+                devices.</p>
+        </section>
+
+
+        <section id="contact" class="card">
+            <h3>Contact</h3>
+            <form id="contactForm">
+                <label>
+                    Name<br>
+                    <input type="text" name="name" placeholder="Your name">
+                </label>
+                <label>
+                    Email<br>
+                    <input type="email" name="email" placeholder="you@example.com">
+                </label>
+                <label>
+                    Message<br>
+                    <textarea name="message" rows="4" placeholder="A short message..."></textarea>
+                </label>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+
+
+    <footer class="site-footer">
+        <div class="container">
+            <small>© <span id="year"></span> My Website — Built with ♥</small>
+        </div>
+    </footer>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,114 @@
+:root {
+    --bg: #f7f7fb;
+    --card: #ffffff;
+    --text: #222;
+    --accent: #2563eb;
+}
+
+* {
+    box-sizing: border-box
+}
+
+html,
+body {
+    height: 100%
+}
+
+body {
+    margin: 0;
+    font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.4;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 1rem
+}
+
+.site-header {
+    background: linear-gradient(90deg, #fff, #f5f7ff);
+    border-bottom: 1px solid rgba(0, 0, 0, .04)
+}
+
+.site-header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem
+}
+
+.logo {
+    margin: 0;
+    font-size: 1.2rem
+}
+
+.nav a {
+    margin-left: 1rem;
+    text-decoration: none;
+    color: var(--text);
+    font-weight: 600
+}
+
+.hero {
+    padding: 2rem 0
+}
+
+.hero h2 {
+    margin-top: 0
+}
+
+.card {
+    background: var(--card);
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 6px 18px rgba(16, 24, 40, .06);
+    margin: 1rem 0
+}
+
+.site-footer {
+    padding: 1rem 0;
+    text-align: center;
+    color: #666
+}
+
+form label {
+    display: block;
+    margin: 0.5rem 0
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: .6rem;
+    border: 1px solid #e6e9f2;
+    border-radius: 6px;
+    font-size: 1rem
+}
+
+button {
+    background: var(--accent);
+    color: #fff;
+    border: 0;
+    padding: .6rem 1rem;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer
+}
+
+button:active {
+    transform: translateY(1px)
+}
+
+@media (max-width:600px) {
+    .site-header .container {
+        flex-direction: column;
+        align-items: flex-start
+    }
+
+    .nav {
+        margin-top: .5rem
+    }
+}
